@@ -14,7 +14,7 @@ st.set_page_config(
 # ----------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("social_media_3platforms_3years.csv")
+    df = pd.read_csv("social_media_5000_clean.csv")
     df["date"] = pd.to_datetime(df["date"])
     df["year"] = df["date"].dt.year
     df["month"] = df["date"].dt.month
